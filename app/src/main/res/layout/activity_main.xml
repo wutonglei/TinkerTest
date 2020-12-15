@@ -8,6 +8,8 @@
 
 
     <ImageView
+        android:background="@drawable/ic_mute"
+        android:id="@+id/iv"
         android:layout_width="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -15,21 +17,49 @@
         android:layout_height="100dp"/>
 
     <TextView
+        android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="显示所有信息"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:text="第一次热修复"
+    <LinearLayout
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/btn_update"
+        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
+        <Button
+            android:text="第1次热修复修改Toast的修改 增加 View  增加新资源文件图片 增加类并用其计算返回到 Text"
+            android:id="@+id/btn_update1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+          <Button
+            android:text="第2次热修复x"
+            android:id="@+id/btn_update2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+          <Button
+            android:text="第3次热修复x"
+            android:id="@+id/btn_update3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="增加的控件"
+            android:id="@+id/ddf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+  <Button
+            android:text="增加的控件2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
